@@ -1,0 +1,25 @@
+//Q.sum of prime numbers in range
+#include<stdio.h>
+int main()
+{
+    int i,j,s,e,sum=0,flag;
+    printf("enter starting values");
+    scanf("%d",&s);
+     printf("enter ending values");
+    scanf("%d",&e);
+    for(i=s;i<=e;i++)
+    {
+        flag=0;
+        for(j=2;j<=i/2;j++)
+        {
+            if(i%j==0)
+            {
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0)sum+=i;
+    }
+    printf("%d",sum);
+    return 0;
+}
