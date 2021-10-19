@@ -1,0 +1,42 @@
+
+//MAME=Junedh Siddiqui
+//ID=20011080
+//SEC=B 
+//Task=7.2
+//Create a switch statment[using ctime]
+#include<iostream>
+#include<ctime>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    time_t currentime=time(0);
+    tm* ltm=localtime(&currentime);
+    switch(n)
+    {
+        case 1:
+        {
+            cout<<"Current Year: "<<1900+ltm->tm_year<<endl;
+            break;
+        }
+        case 2:
+        {
+            cout<<"Current Month: "<<1+ltm->tm_mon<<endl;
+            break;
+        }
+    case 3:
+    {
+        cout<<"Current Date: "<<ltm->tm_mday<<endl;
+        break;
+    }
+    case 4:
+    {
+        cout<<"Not Applicable: ";
+    }
+    }
+}
+
+
+
+

@@ -1,0 +1,36 @@
+//MAME=Junedh Siddiqui
+//ID=20011080
+//SEC=B 
+//Task=7.1
+//Create a switch statment[manual]
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    switch(n)
+    {
+    case 1:
+    {
+        cout<<"current year: 2021";
+        break;
+    }
+    case 2:
+    {
+        cout<<"current month: October";
+        break;
+    }
+    case 3:
+    {
+        cout<<"current day: Monday";
+        break;
+    }
+    case 4:
+    {
+        cout<<"Not Applicable";
+        break;
+    }
+    }
+}

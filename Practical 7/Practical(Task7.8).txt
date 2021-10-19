@@ -1,0 +1,26 @@
+//Name=Junedh Siddiqui
+//SEC=B 
+//Task=7.8(store these array[4][4]:)
+/*
+
+* * * *
+* * *
+* *
+*
+
+*/
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[4][4];
+    for(int i=0;i<4;i++)
+    {
+        for(int j=3;j>=i;j--)
+        {
+           cout<<" * ";
+        }
+        cout<<endl;
+    }
+}
+
