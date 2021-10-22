@@ -1,0 +1,22 @@
+//NAME=Junedh Siddiqui
+//Sec=B
+//Task=8.7
+//Preform call by address for swapping value of a and b:
+//v2.
+#include<iostream>
+using namespace std;
+void swapusingaddress(int *x, int *y)
+{
+    int swap;
+    swap=*x;
+    *x=*y;
+    *y=swap;
+}
+int main()
+{
+    int x=10,y=20;
+    swapusingaddress(&x,&y);
+    
+    cout<<"x:"<<x<<endl;
+    cout<<"y:"<<y<<endl;
+}

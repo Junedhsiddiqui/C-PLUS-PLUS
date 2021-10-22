@@ -1,0 +1,24 @@
+//NAME=Junedh Siddiqui
+//Sec=B
+//Task=8.4
+//Find factorial of a number using function but not recursion.
+#include<iostream>
+using namespace std;
+void factorial(int n)
+{
+    int fact=1;
+    while(n)
+{
+    fact=fact*n;
+    n--;
+}
+cout<<fact<<" ";
+return;
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    factorial(n);
+}

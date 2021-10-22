@@ -1,0 +1,15 @@
+//NAME=Junedh Siddiqui
+//Sec=B
+//Task=8.2(V2)
+//In this code when we pass the value of array to pointer i use &(operator) because of this &(operator) it show me the error.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={10,20,30};
+    int *p;
+    p=&arr;
+    cout<<*p<<" ";
+    p++;
+    cout<<*p<<endl;
+}
