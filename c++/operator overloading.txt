@@ -1,6 +1,6 @@
 
 //operator overloadig
-//sum of two numbers..
+//sum of two numbers using operator overloading..
 #include<iostream>
 using namespace std;
 
