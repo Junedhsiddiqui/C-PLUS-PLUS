@@ -1,0 +1,63 @@
+//Junedh Siddiqui
+//Sec=B
+//Diamond problem..for=6
+#include<iostream>
+using namespace std;
+class A
+{
+public:
+  void Display1()
+  {
+    cout << "class-A" << endl;
+  }
+};
+class B: virtual public A
+{
+public:
+  void Display2()
+  {
+    cout << "class-B" << endl;
+  }
+};
+class C: virtual public A
+{
+public:
+  void Display3()
+  {
+    cout << "class-C" << endl;
+  }
+};
+class D:public B
+{
+public:
+  void Display4()
+  {
+    cout << "class-D" << endl;
+  }
+};
+class E:public C
+{
+public:
+  void Display5()
+  {
+    cout << "class-E" << endl;
+  }
+};
+class F:public D,public E
+{
+public:
+  void Display6()
+  {
+    cout << "class-F" << endl;
+  }
+};
+int main()
+{
+    F obj;
+    obj.Display1();
+    obj.Display2();
+    obj.Display3();
+    obj.Display4();
+    obj.Display5();
+    obj.Display6();
+}
