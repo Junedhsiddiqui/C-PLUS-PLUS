@@ -5,7 +5,7 @@ class base
 {
     public:
     int var1;
-    void display1()
+  virutal void display()
     {
          cout<<"display1 base="<<var1<<endl;
     }
@@ -14,7 +14,7 @@ class derived:public base
 {
     public:
     int var2;
-    void display2()
+    void display()
     {
          cout<<"display1 base="<<var1<<endl;
          cout<<"display2 derived="<<var2<<endl;
@@ -29,16 +29,17 @@ int main()
     
     b=&obj1;
     b->var1=66;
-    b->display1();
+    b->display();
     
     d=&obj2;
     d->var1=77;
     d->var2=78;
-    d->display2();
+    d->display();
     
     b=&obj2;
-    b->var2=88;
-    b->display2();
+    b->var1=88;
+    //b->var2=89;
+    b->display();
 }
 
 
