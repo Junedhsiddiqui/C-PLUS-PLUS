@@ -1,0 +1,53 @@
+//pointer to dervied class
+#include<iostream>
+using namespace std;
+class base
+{
+    public:
+    int var1;
+    void display1()
+    {
+         cout<<"display1 base="<<var1<<endl;
+    }
+};
+class derived:public base
+{
+    public:
+    int var2;
+    void display2()
+    {
+         cout<<"display1 base="<<var1<<endl;
+         cout<<"display2 derived="<<var2<<endl;
+    }
+};
+int main()
+{
+    base *b;
+    derived *d;
+    base obj1;
+    derived obj2;
+    
+    b=&obj1;
+    b->var1=66;
+    b->display1();
+    
+    d=&obj2;
+    d->var1=77;
+    d->var2=78;
+    d->display2();
+    
+    b=&obj2;
+    b->var2=88;
+    b->display2();
+}
+
+
+
+
+
+
+
+
+
+
+
